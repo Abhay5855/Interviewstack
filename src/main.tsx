@@ -4,6 +4,7 @@ import './index.css';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree.gen';
+import MobileWarningDialog from './components/ui/MobileWarningDialog';
 
 const router = createRouter({ routeTree });
 
@@ -16,6 +17,7 @@ declare module '@tanstack/react-router' {
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
+		<MobileWarningDialog />
 		<RouterProvider router={router} />
 	</StrictMode>
 );
