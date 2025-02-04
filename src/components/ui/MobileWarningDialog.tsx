@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { MonitorOff } from 'lucide-react';
-import { Button } from './button';
 import {
 	AlertDialog,
 	AlertDialogTrigger,
